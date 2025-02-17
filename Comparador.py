@@ -136,7 +136,7 @@ if uploaded_files:
         }
 
         generation_config = {
-            "temperature": 0.2,
+            "temperature": 0,
             "max_output_tokens": 8192,
             "response_mime_type": "text/plain",
         }
