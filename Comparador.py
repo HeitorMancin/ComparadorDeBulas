@@ -153,7 +153,7 @@ if uploaded_files:
                     Instruções Adicionais:
                     Compare todas as seções da bula de ambos os medicamentos e diga em qual página está localizada as informações de cada seção.
                     Ignore diferenças de formatação, focando apenas no conteúdo.
-                    **Se as bulas tiverem imagens, inclua a seção 'Imagens' na tabela e fale de maneira bem detalhada a descrição e a diferença das imagens, diga também em qual página estão as imagens.**
+                    **Verifique se as bulas contém imagens, e somente caso contiver, inclua a seção 'Imagens' na tabela e fale de maneira bem detalhada a descrição e as diferenças das imagens, diga também em qual página estão as imagens.**
                     Os resumos dos medicamentos devem ser limitados a poucas palavras.
                     Se não houver diferença em uma seção, indique 'Sem diferença'
                     Não inclua frases adicionais antes ou depois da tabela"""),
