@@ -1,0 +1,18 @@
+trigger:
+- main  
+
+pool:
+  vmImage: 'ubuntu-latest'  
+
+steps:
+- script: |
+    echo "Commit Hash: $(Build.SourceVersion)" > autenticidade.txt
+    find $(Build.SourcesDirectory) -type f -exec sha256sum {} + | sort | sha512sum >> autenticidade.txt
+    cat autenticidade.txt
+  displayName: 'Gerar Hash SHA-512 do Código'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathToPublish: 'autenticidade.txt'
+    artifactName: 'prova_autenticidade'
+  displayName: 'Salvar Hash como Artefato'
