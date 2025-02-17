@@ -185,7 +185,7 @@ if uploaded_files:
                     st.markdown(message["content"], unsafe_allow_html=True)
 
             # Entrada do usuário
-            if prompt := st.chat_input("Digite sua pergunta:"):
+            if prompt := st.chat_input("Faça uma pergunta:"):
                 st.session_state.messages.append({"role": "user", "content": prompt})
                 with st.chat_message("user"):
                     st.markdown(prompt)
