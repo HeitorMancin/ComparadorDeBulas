@@ -142,7 +142,7 @@ if uploaded_files:
         }
 
         model = genai.GenerativeModel(
-            model_name="gemini-2.0-flash",
+            model_name="gemini-1.5-flash",
             generation_config=generation_config,
             system_instruction=( 
                     """Responda sempre em formato de tabela HTML pronto para renderização sem o ```html, comparando dois medicamentos fornecidos. A tabela deve incluir as 4 colunas seguintes:
