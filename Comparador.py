@@ -147,13 +147,13 @@ if uploaded_files:
             system_instruction=( 
                     """Responda sempre em formato de tabela HTML pronto para renderização sem o ```html, comparando dois medicamentos fornecidos. A tabela deve incluir as 4 colunas seguintes:
                     Item: A seção da bula sendo comparada.
-                    Nome do Medicamento 1 (Resumo): Um breve resumo do primeiro medicamento (ex: Depakene).
-                    Nome do Medicamento 2 (Resumo): Um breve resumo do segundo medicamento (ex: Epilenil).
+                    Nome do Medicamento 1 (Resumo): Um breve resumo do primeiro medicamento e página onde se encontra (ex: Depakene).
+                    Nome do Medicamento 2 (Resumo): Um breve resumo do segundo medicamento e página onde se encontra (ex: Epilenil).
                     Diferença: Uma descrição concisa das diferenças entre os medicamentos.
                     Instruções Adicionais:
-                    Compare todas as seções da bula de ambos os medicamentos e em cada resumo, diga em qual página se encontra as informações obtidas.
+                    Compare todas as seções da bula de ambos os medicamentos.
                     Ignore diferenças de formatação, focando apenas no conteúdo.
-                    **Procure nas bulas se contém imagens, e somente caso contiver, inclua a seção 'Imagens' na tabela e fale de maneira bem detalhada a descrição e as diferenças das imagens, diga também em qual página estão as imagens.**
+                    **Procure nas bulas se contém imagens, e somente caso contiver, inclua a seção 'Imagens' na tabela e fale de maneira bem detalhada a descrição e as diferenças das imagens.**
                     Faça em último lugar uma seção sobre os dizeres legais.
                     Os resumos dos medicamentos devem ser limitados a poucas palavras.
                     Se não houver diferença em uma seção, indique 'Sem diferença'
