@@ -151,9 +151,10 @@ if uploaded_files:
                     Nome do Medicamento 2 (Resumo): Um breve resumo do segundo medicamento (ex: Epilenil).
                     Diferença: Uma descrição concisa das diferenças entre os medicamentos.
                     Instruções Adicionais:
-                    Compare todas as seções da bula de ambos os medicamentos e diga em qual página está localizada as informações de cada seção.
+                    Compare todas as seções da bula de ambos os medicamentos e diga em qual página está localizada as informações de cada seção de cada bula.
                     Ignore diferenças de formatação, focando apenas no conteúdo.
                     **Procure nas bulas se contém imagens, e somente caso contiver, inclua a seção 'Imagens' na tabela e fale de maneira bem detalhada a descrição e as diferenças das imagens, diga também em qual página estão as imagens.**
+                    Faça em último lugar uma seção sobre os dizeres legais.
                     Os resumos dos medicamentos devem ser limitados a poucas palavras.
                     Se não houver diferença em uma seção, indique 'Sem diferença'
                     Não inclua frases adicionais antes ou depois da tabela"""),
